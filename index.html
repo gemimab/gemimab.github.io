@@ -58,6 +58,31 @@ body {font-family: "Lato", sans-serif;}
   height: 300px;
 }
 
+/* Accordion */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
 
 </style>
 <body class="w3-light-grey">
@@ -66,9 +91,6 @@ body {font-family: "Lato", sans-serif;}
 <div class="w3-bar w3-black w3-hide-small">
   <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
   <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
   <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
 </div>
@@ -89,7 +111,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-display-left w3-padding-large">
       
       
-    </div> <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>What have I been up to?</b></h1>-->
+    </div> <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>What have I been up to?</b></h1>--> 
   </header>
 
   <!-- Grid -->
@@ -107,23 +129,36 @@ and is wrapped around the whole page content, except for the footer in this exam
 
         <div class="w3-justify">
           <!--<img src="https://raw.githubusercontent.com/gemimab/gemimab.github.io/master/Images/gemima%20birch%20Prague.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">-->
-          <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
-            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p><strong>Persistence!</strong> At university I had covered front-end web development, object relationships in databases, MVC structure and dabbled in PHP, but had never done back-end coding like I do now with Lightning Aura components. </p>
+          <p>At the beginning of learning to program I felt I'd never 'make it' because there were so many languages to learn, and so muany admin out-the-box features to get to grips with. It was overwhelming at times, but then through the support of excellent and 
+			experienced developers I learnt everyone felt that way at some stage, and even with decades of experience, many felt there was always something new to learn to sharpen their skills.</p> 
+			<p>This relaxed me, and I took a deeper dive into programming, getting to grips with:  
+			<ul> 
+				<li>The flow between the component, controller, helper and apex class</li>
+				<li> How to use the Community Builder</li> 
+				<li> Writing test classes </li>
+				<li> Lightning data tables and wrapper classes </li>
+				<li> Page layouts and record types, field-level security, global picklists </li>
+				<li> Workflow rules </li>
+			</ul>
+					
+			</p> 
+			
+			<p> It has been a journey, but one I've thoroughly enjoyed from the frustrations to the joys. There's something about programming that brings such pride and satisfaction when you create a piece of code that is going to help the project succeed.</p>
          
-          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo1')" id="myBtn"><b>Learn More  </b> </button></p>
+       <!--   <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo1')" id="myBtn"><b>Learn More  </b> </button></p>
           <p class="w3-clear"></p>
           <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
             <hr>
               <div class="w3-col l2 m3">
-<!--                 <img src="https://raw.githubusercontent.com/gemimab/gemimab.github.io/master/Images/gemima%20birch%20Prague.jpg" style="width:90px;"> -->
+-                 <img src="https://raw.githubusercontent.com/gemimab/gemimab.github.io/master/Images/gemima%20birch%20Prague.jpg" style="width:90px;"> 
               <img src="https://raw.githubusercontent.com/gemimab/gemimab.github.io/master/Images/gemima%20birch%20Prague.jpg" style="width:90px;">
 		  </div>
               <div class="w3-col l10 m9">
                 
                 <p>Great blog post! Following</p>
               </div>
-          </div>
+          </div>-->
         </div>
       </div>
       <hr>
@@ -136,39 +171,24 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
 
         <div class="w3-justify">
-          <img src="/w3images/man_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
-          <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
-          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           
-		  <div class="tab">
-		  <button class="tablinks" onclick="openCity(event, 'Easter')" id="defaultOpen">Easter</button>
-		  <button class="tablinks" onclick="openCity(event, 'Halloween')">Halloween</button>
-		  <button class="tablinks" onclick="openCity(event, 'Christmas')">Christmas</button>
-		</div>
-
-		<div id="Easter" class="tabcontent">
-		  <h3>Easter</h3>
-		  <p>London is the capital city of England.</p>
-		</div>
-
-		<div id="Halloween" class="tabcontent">
-		  <h3>Halloween</h3>
-		  <p>Paris is the capital of France.</p> 
-		</div>
-
-		<div id="Christmas" class="tabcontent">
-		  <h3>Christmas</h3>
-		  <p>Tokyo is the capital of Japan.</p>
-		</div>
+          
+         <!-- <p>For Easter I worked with another person to arrange some Easter festivities in the office. I arrived before 95% of the department to hide mini Easter eggs, which is challenging in a minimalist open plan office! Then announced at 10am there would be an Easter egg hunt.</P>
+		  <p> Lesson learnt - the moment people see eggs, the race is on, rules go out the window, and people get competitive!</p> -->
+           
+          
+		<button class="accordion" onclick="toggle_visibility('demo2')"> <strong>Easter!</strong> It's tough being the Easter bunny?!</button>
+			<div id="demo2" class="panel" style="display:none">
+				<p>For Easter I arrived before 95% of the department to hide mini Easter eggs, which is challenging in a minimalist open plan office! Then announced at 10am there would be an Easter egg hunt.</P>
+				<p> Lesson learnt - the moment people see eggs, the race is on, rules go out the window, and people get competitive!</p>
+			</div>
 		  
 		  
-		  
-          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo2')"><b>Learn More  </b> </button></p>
+         <!-- <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo2')"><b>Learn More  </b> </button></p>
           <p class="w3-clear"></p>
           
           <!-- Example of comment field -->
-          <div id="demo2" style="display:none">
+          <!--<div id="demo2" style="display:none">
             <div class="w3-row">
               <hr>
               <div class="w3-col l2 m3">
@@ -180,7 +200,7 @@ and is wrapped around the whole page content, except for the footer in this exam
               </div>
             </div>
             
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -198,7 +218,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 		   
 		<p>	Please feel free to ask me more about what I have built, or contact me to have access to my personal developer sandbox to see what I am capable of. </p>
 			
-          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo3')"><b>Learn More  </b> </button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo3')"><b>Learn More  </b> </button></p>
           <p class="w3-clear"></p>
           
           <!-- Example of comment field -->
@@ -232,7 +252,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <ul>
 			<li></li>
 		  </ul>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo4')"><b>Learn More  </b> </button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo4')"><b>Learn More  </b> </button></p>
           <p class="w3-clear"></p>
           
           <!-- Example of comment field -->
@@ -279,7 +299,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
       </div>
 			
-          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo5')"><b>Learn More  </b> </button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo5')"><b>Learn More  </b> </button></p>
           <p class="w3-clear"></p>
           
           <!-- Example of comment field -->
@@ -477,21 +497,10 @@ function toggle_visibility(id) {
           e.style.display = 'block';
     }
 	
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
 
 
 
