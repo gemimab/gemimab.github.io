@@ -103,16 +103,18 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-display-left w3-padding-large">
       
       
-    </div> <h1 class="w3-xxlarge w3-text-red w3-hide-small"><b>My Top Skills: </b></h1>
+    </div> <h1 class="w3-xxlarge w3-text-red w3-hide-small"><b>My Top Technical Skills: </b></h1>
 	   
           <p>
             <span class="w3-tag w3-white w3-small w3-margin-bottom">JavaScript</span> 
             <span class="w3-tag w3-white w3-small w3-margin-bottom">Apex</span> 
 			<span class="w3-tag w3-white w3-small w3-margin-bottom">SOQL</span>
-			<span class="w3-tag w3-white w3-small w3-margin-bottom">Lightning</span>
+			<span class="w3-tag w3-white w3-small w3-margin-bottom">Lightning Web Components</span>
+			<span class="w3-tag w3-white w3-small w3-margin-bottom">Lightning Aura Components</span>
             <span class="w3-tag w3-white w3-small w3-margin-bottom">HTML</span>  
             <span class="w3-tag w3-white w3-small w3-margin-bottom">Salesforce Lightning Design System</span>
 			<span class="w3-tag w3-white w3-small w3-margin-bottom">BitBucket</span>
+			<span class="w3-tag w3-white w3-small w3-margin-bottom">Lightning Web Components</span>
 			<span class="w3-tag w3-white w3-small w3-margin-bottom">Analysis</span>
 			
 			
@@ -130,7 +132,7 @@ and is wrapped around the whole page content, except for the footer in this exam
      <!-- Blog entry -->
       <div class="w3-container w3-white w3-margin w3-padding-large" id="salesforceExperience">
         <div class="w3-center">
-          <h3>Projects I've worked on in the working world</h3>
+          <h3>Projects I've worked on</h3>
           <h5>See what I've built. <span class="w3-opacity">December, 2019</span></h5>
         </div>
 
@@ -138,15 +140,38 @@ and is wrapped around the whole page content, except for the footer in this exam
           <!--<img src="https://raw.githubusercontent.com/gemimab/gemimab.github.io/master/Images/Gemima.JPG" alt="Runway" style="width:100%" class="w3-padding-16">-->
           <p>I've had opportunities to progress a variety of skills, via a range of projects, notably: </p>
 		  <ul>
-			<li>Payroll Profiles </li>
+			<li>Salesforce Community</li>
+				<ul>
+					<li>Creating pages on Community Builder</li>
+					<li>Adding components to Community Builder</li>
+				</ul>
+			<li>Community registration page</li>
+				<ul>
+					<li>Displayed dynamic messages advising against using Ad Blocker and IE</li>
+					<li>Adjused existing code to include new fields</li>
+				</ul>
+			<li>Job Requests - allowing end users to request X number of employees online </li>
+				<ul>
+					<li>Created a series of LWCs to build this functionality, including: </li> 
+						<ul>
+							<li> A reusable custom spinner </li>
+							<li> Lightning datatable</li>
+							<li> Search functionality</li>
+							<li> Form for end users to fill out</li>
+							<li> Salesforce Approval Process with email alerts</li>
+						</ul>
+				
+				</ul>
+			<li>Payroll Profiles - allowing end users to enter their bank details</li>
 				<ul>
 					<li>This involved analysis on the business process and how Salesforce could meet those business needs</li> 
 					<li>Record types and associated page layouts </li>
-					<li>Creating custom report types, and reports from that along with dashboards</li>
+					<li>Creating custom report types, reports and dashboards</li>
+					<li>Workflow rules with email alerts</li>
 					<li>Quality Assurance testing</li>
 					
 				</ul>
-			<li>Timesheets</li>
+			<li>Timesheets - allowing end users to populate their timesheet</li>
 				<ul>
 					<li>Workflow rules for sending out timesheet reminder emails</li>
 					<li>Enhancing code to cater for new business process</li>
@@ -156,8 +181,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 				</ul>
 			<li>Adhoc coding work</li>
 				<ul>
-					<li>Creating a new component that displays a lightning data table with results, and adding that to a profile's homepage</li>
-					<li>Creating a new component that dynamically displays text in an accordion in the Community</li>
+					<li>Creating a new aura component that displays a lightning data table with results, and adding that to a profile's homepage</li>
+					<li>Creating a new aura component that dynamically displays text in an accordion in the Community</li>
 					<li>Bug fixes on components in Community</li>
 					<li>Using change sets to move items between sandboxes</li>
 				</ul>
@@ -166,72 +191,97 @@ and is wrapped around the whole page content, except for the footer in this exam
 					<li>Using Source Tree program - creating branches and committing work</li>
 					<li>Making pull requests </li>
 				</ul>
+			<li>Google Analytics</li>
+				<ul>
+					<li>Setting up google analytics to a sandbox to track which Community pages are used most</li>
+					<li>Adding code to components to track which components are fired off most by end users, to feed back to operation managers which piece of functionality is popular or not  </li>
+					<li>Adding code to components to track commonly occuring bugs, which would otherwise be hard to debug in production  </li>
+				</ul>	
+			
 		  </ul>
 		  
 		 
 		   
 		
 			
-         <!-- <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo3')"><b>See my unicversity projects  </b> </button></p>
-          <p class="w3-clear"></p>
+			<p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo3')"><b>See my university projects  </b> </button></p>
+			<p class="w3-clear"></p>
           
-          <!-- Example of comment field -->
-         <!-- <div id="demo3" style="display:none">
-            <hr>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl_mountain.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-               
-                <p>That was a great runway show! Thanks for everything.</p>
-              </div>
-            </div>
-            
-	
-			
-          </div>-->
-        </div>
+			  <!-- Example of comment field -->
+			<div id="demo3" style="display:none">
+				<hr>
+				<div class="w3-row w3-margin-bottom">
+					<div class="w3-col l2 m3">
+						<img src="/w3images/girl_mountain.jpg" style="width:90px;">
+					</div>
+					<div class="w3-col l10 m9">
+						<p>Year long case study on Toyota and their business model. Involved team work, coordination, and presentations, along with written analysis</p>
+					</div>
+				</div>
+				
+				<div class="w3-row w3-margin-bottom">
+					<div class="w3-col l10 m9">
+						<p>Business plan for a board game cafe - included market research, trends and financials </p>
+					</div>
+				</div>
+			</div>
+        
+		</div>
       </div>
-      <!-- Blog entry -->
+	  
+	        <!-- Blog entry -->
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>Learning Salesforce Programming</h3>
-          <h5>My experiences with it so far. <span class="w3-opacity">December, 2019</span></h5>
+          <h5>My experiences with it so far. <span class="w3-opacity">September, 2020</span></h5>
         </div>
 
         <div class="w3-justify">
           <!--<img src="https://raw.githubusercontent.com/gemimab/gemimab.github.io/master/Images/gemima%20birch%20Prague.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">-->
-          <p><strong>Persistence!</strong> At university I had covered front-end web development, object relationships in databases, MVC structure and dabbled in PHP, but had never done back-end coding like I do now with Lightning Aura components. </p>
-          <p>At the beginning of learning to program I felt I'd never 'make it' because there were so many languages to learn, and so many admin out-the-box features to get to grips with. It was overwhelming at times, but through talking with experienced developers I realised my feelings were common, and to be a good developer, you need to be constantly learning.</p> 
-			<p>This relaxed me, and I took a deeper dive into programming, getting to grips with:  
-			<ul> 
-				<li>The flow between the component, controller, helper and apex class</li>
-				<li> How to use the Community Builder</li> 
-				<li> Writing test classes </li>
-				<li> Salesforce Admin features </li>
-				
-			</ul>
+          <p><strong>The brightside of 2020.</strong> This year went fast. In a blink of an eye it became September, but despite the many challenges 2020 brought, for technical growth I'm at my proudest.</p>
+          <p>Almost a year ago I felt almost overwhelmed by the mountain infront of me which was Salesforce dev. With so many new languages at once, so many syntax variations, it was hard getting my feet off the ground.</p> 
+			<p>But, through continued support from team members and my mentor, everything began to click and no longer seem impossible. 
+			There is still so much to learn, and with Salesforce it will always be that way as it is such a vast CRM, but that is something that excites me.     
+				<ul> 
+					<li>I chose to take on the challenge of creating my first LWC, which was a steep learning curve, as it wasn't being used by anyone on the dev team yet</li>
+					<li> I've learnt more about apex triggers, events, maps, aura binding and wrapper classes</li> 
+					
+					
+				</ul>
 					
 			</p> 
 			
-			<p> It has been a journey, but one I've thoroughly enjoyed from the frustrations to the joys. There's something about programming that brings such pride and satisfaction when you create a piece of code that is going to help the project succeed.</p>
          
-       <!--   <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo1')" id="myBtn"><b>Learn More  </b> </button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo1')" id="myBtn"><b>Older Posts  </b> </button></p>
           <p class="w3-clear"></p>
           <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
             <hr>
-              <div class="w3-col l2 m3">
--                 <img src="https://raw.githubusercontent.com/gemimab/gemimab.github.io/master/Images/gemima%20birch%20Prague.jpg" style="width:90px;"> 
-              <img src="https://raw.githubusercontent.com/gemimab/gemimab.github.io/master/Images/gemima%20birch%20Prague.jpg" style="width:90px;">
-		  </div>
+              
               <div class="w3-col l10 m9">
                 
-                <p>Great blog post! Following</p>
+					<p><strong>Persistence!</strong> At university I had covered front-end web development, object relationships in databases, MVC structure and dabbled in PHP, but had never done back-end coding like I do now with Lightning Aura components. </p>
+					<p>At the beginning of learning to program I felt I'd never 'make it' because there were so many languages to learn, and so many admin out-the-box features to get to grips with. It was overwhelming at times, but through talking with experienced developers I realised my feelings were common, and to be a good developer, you need to be constantly learning.</p> 
+					<p>This relaxed me, and I took a deeper dive into programming, getting to grips with:  
+					<ul> 
+						<li>The flow between the component, controller, helper and apex class</li>
+						<li> How to use the Community Builder</li> 
+						<li> Writing test classes </li>
+						<li> Salesforce Admin features </li>
+						
+					</ul>
+							
+					</p> 
+					
+					<p> It has been a journey, but one I've thoroughly enjoyed from the frustrations to the joys. There's something about programming that brings such pride and satisfaction when you create a piece of code that is going to help the project succeed.</p>
+				
               </div>
-          </div>-->
+          </div>
         </div>
       </div>
+      <hr>
+	  
+	  
+     
       <hr>
 
       <!-- Blog entry -->
@@ -248,11 +298,17 @@ and is wrapped around the whole page content, except for the footer in this exam
 		  <p> Lesson learnt - the moment people see eggs, the race is on, rules go out the window, and people get competitive!</p> -->
            
           
-		<button class="accordion" onclick="toggle_visibility('demo2')"> <strong>Easter!</strong> It's tough being the Easter bunny?!</button>
-			<div id="demo2" class="panel" style="display:none">
+		<button class="accordion" onclick="toggle_visibility('Easter')"> <strong>Easter!</strong> It's tough being the Easter bunny?!</button>
+			<div id="Easter" class="panel" style="display:none">
 				<p>For Easter I arrived before 95% of the department to hide mini Easter eggs, which is challenging in a minimalist open plan office! Then announced at 10am there would be an Easter egg hunt.</P>
 				<p> Lesson learnt - the moment people see eggs, the race is on, rules go out the window, and people get competitive!</p>
 			</div>
+		<button class="accordion" onclick="toggle_visibility('halloween')"> <strong>Halloween!</strong> Who doesn't like spooky stories and jokes</button>
+			<div id="halloween" class="panel" style="display:none">
+				<p>Was in charge of decorating the office for Halloween.</P>
+				<p>Despite the long set-up time, it was rewarding seeing people walk in with smiles on their faces</p>
+			</div>	
+			
 		  
 		  
          <!-- <p class="w3-right"><button class="w3-button w3-black" onclick="toggle_visibility('demo2')"><b>Learn More  </b> </button></p>
